@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos | IR IMPORTS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="produtos.css">
+  <meta name="description" content="Loja de produtos importados com estilo, qualidade e atendimento personalizado. Compre agora na RR IMPORTS!">
+<meta name="author" content="RR IMPORTS">
+<meta property="og:title" content="RR IMPORTS - Produtos importados de qualidade">
+<meta property="og:description" content="A melhor loja de produtos importados. Envio rápido e suporte via WhatsApp.">
+<meta property="og:type" content="website">
+
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="https://wa.me/5581973207562" target="_blank">Contato</a>
+  </nav>
+
+  <header>
+    <img src="logodaloja.png" alt="Logo RR IMPORTS" style="max-width: 150px; margin-bottom: 10px;">
+    <h1>Produtos</h1>
+    <p>Confira os itens disponíveis na IR IMPORTS</p>
+  </header>
+
+  <section class="produtos">
+    <div class="produto">
+      <img src="foto01 (2).jpeg" alt="Produto 1">
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="foto02.jpeg" alt="Produto 2">
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="foto03.jpeg" alt="Produto 3">
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 IR IMPORTS - Todos os direitos reservados | 
+    <a href="https://wa.me/5581973207562" target="_blank">Fale conosco no WhatsApp</a></p>
+  </footer>
+
+  <script>
+    function comprarProduto(produto) {
+      const numeroWhatsApp = '5581973207562';
+      const mensagem = `Olá! Tenho interesse no produto!` ;
+      const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+      window.open(link, '_blank');
+    }
+  </script>
+</body>
+</html>

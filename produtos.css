@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #00FF66;
+  }
+  
+  nav {
+    background-color: #00FF66;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #00FF66;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  
+  .produto {
+    background-color: #1a1a1a;
+    border: 1px solid #00FF66;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 255, 102, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 255, 102, 0.4);
+  }
+  
+  .produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .produto h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+  }
+  
+  .produto p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 10px 0;
+  }
+  
+  .produto button {
+    background-color: #00FF66;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .produto button:hover {
+    background-color: #00d26a;
+  }
+  
+  footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #00FF66;
+  }
+  
+  footer a {
+    color: #00FF66;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
