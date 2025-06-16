@@ -1,3 +1,4 @@
+/* Reset e base */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -5,6 +6,7 @@ body {
   color: #333;
 }
 
+/* Navegação */
 nav {
   background-color: #4CAF50;
   padding: 15px 0;
@@ -16,17 +18,34 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 0 20px;
+}
+
+/* Itens nav alinhados esquerda, centro e direita */
+.nav-esquerda, .nav-centro, .nav-direita {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-esquerda {
+  text-align: left;
+}
+
+.nav-centro {
+  text-align: center;
+}
+
+.nav-direita {
+  text-align: right;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  margin: 10px;
   font-size: 1.1rem;
-  transition: 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 nav a:hover {
@@ -34,8 +53,9 @@ nav a:hover {
   color: #e8f5e9;
 }
 
+/* Header */
 header.hero {
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
   padding: 60px 20px;
   border-bottom: 3px solid #4CAF50;
@@ -51,6 +71,7 @@ header.hero {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .hero h1 .destaque {
@@ -79,6 +100,7 @@ header.hero {
   background-color: #45a049;
 }
 
+/* Seção destaques */
 section.destaques {
   max-width: 900px;
   margin: 50px auto;
@@ -92,7 +114,9 @@ section.destaques {
   border-bottom: 2px solid #4CAF50;
   display: inline-block;
   padding-bottom: 5px;
-  width: 200px;
+  width: 100%;
+  max-width: 250px;
+  color: #333;
 }
 
 .destaques ul {
@@ -102,6 +126,7 @@ section.destaques {
   color: #444;
 }
 
+/* Rodapé */
 footer {
   background-color: #eee;
   text-align: center;
@@ -121,14 +146,14 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* WhatsApp flutuante */
+/* Botão WhatsApp flutuante */
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: #4CAF50;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 12px 14px;
   border-radius: 50%;
   box-shadow: 0 0 12px #4CAF50;
@@ -141,10 +166,28 @@ footer a:hover {
   transform: scale(1.1);
 }
 
+/* RESPONSIVO PARA CELULAR */
 @media (max-width: 768px) {
+
   nav .container {
     flex-direction: column;
-    text-align: center;
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  .nav-esquerda, .nav-centro, .nav-direita {
+    flex: none;
+    width: 100%;
+    text-align: center !important;
+  }
+
+  header.hero {
+    padding: 40px 15px;
+  }
+
+  .logo {
+    max-width: 90px;
+    margin-bottom: 15px;
   }
 
   .hero h1 {
@@ -156,6 +199,17 @@ footer a:hover {
   }
 
   .botao {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  section.destaques {
+    margin: 30px 15px;
+    padding: 15px;
+  }
+
+  .destaques h2 {
+    max-width: 100%;
     width: 100%;
   }
 }
